@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="outer-class">
+        <h1 id="inner-class">To Do List</h1>
+    </div>
+          
+    
+      <div id="typing_place">  
+        <form action="" method="get" enctype="multipart/form-data">
+            <input required id="todo" placeholder="enter the chorses" type="text"> <br>
+            
+
+
+        </form>
+    
+    </div>
+    <br>
+
+    <button id="button" >
+        See
+    </button>
+    
+    <script src="front.js"></script>
+   
+    <button id="add" >
+        Add
+    </button>
+    
+    <script src="add.js"></script>
+
+   
+    <input type="image" src="3481306.png" name="bin"  id="bin" />
+    <script src="delete.js"></script>
+
+    
+
+   <!-- <ul>
+    </ul>
+       <script>
+        fetch('https://64c3c68667cfdca3b660452c.mockapi.io/todo')
+        .then(res => {
+            /*console.log(res);*/
+           return res.json();
+        })
+        .then(data => {
+            console.log(data)
+            data.forEach(user =>{
+                const markup = `<li> ${user.todo} </li>`;
+
+                document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
+            });
+        })
+        .catch(error => console.log(error))
+       </script>
+        -->
+        
+</body>
+</html>

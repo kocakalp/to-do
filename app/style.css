@@ -1,0 +1,51 @@
+body {
+    background: blue
+}
+
+#outer-class {
+   position: absolute;
+      top: 100px; /* İstenilen yükseklik değeri */
+      left: 50%; /* İstenilen yatay ortalanma */
+      transform: translateX(-50%); /* Yatayda tam ortalanma */  
+    width: 100%;
+    background-color: white;
+  }
+  
+  #inner-class {
+    text-align: center;
+    color: blue;
+  }
+
+ 
+
+  #button {
+    background-color: rgb(31, 49, 49);
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  #add {
+    background-color: rgb(31, 49, 49);
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  #bin {
+    background-color: rgb(66, 138, 138);
+    border-radius: 4px;
+    padding: 15px 15px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  
+  }
