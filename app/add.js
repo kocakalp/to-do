@@ -1,5 +1,6 @@
 
 const addjs = document.querySelector('#add');
+const taskList = document.getElementById("taskList");
 
 const add = async () => {
     const todoInput = document.getElementById("todo").value;
@@ -21,19 +22,23 @@ const add = async () => {
              },
              body: JSON.stringify(newUser)
          } );
+
          const data = await res.json();
     
          if(!res.ok) {
              console.log('Problem');
              return;
          }
- 
-        
+
+         console.log("Task added:", data);
          
-         console.log(data);
-     } catch (error) {
-         console.log(error);
+         const newTask = document.createElement("li");
+         newTask.textContent = todoInput;
+         taskList.appendChild(newTask);
+    } catch (error) {
+        console.log(error);
      }
     
- }
+ };
+ 
  addjs.addEventListener('click', add);

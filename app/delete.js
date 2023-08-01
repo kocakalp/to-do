@@ -1,7 +1,7 @@
-const bin = document.getElementById("bin");
+const bin = document.getElementById("bin");// get element sadece ID özelliği ie çalışır ve querySelectorre gçre daha hızlıdır
 
 bin.addEventListener("click", () => {
-  fetch('https://64c3c68667cfdca3b660452c.mockapi.io/todo/19', {
+  fetch('https://64c3c68667cfdca3b660452c.mockapi.io/todo/20', {
     method: 'DELETE',
   })
   .then(res => {

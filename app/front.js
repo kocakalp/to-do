@@ -1,4 +1,4 @@
-const buttonjs = document.querySelector('button');
+const buttonjs = document.querySelector('button');//querySelector  bütün css selector leriyle çalışabilir 
 
 
 

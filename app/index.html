@@ -8,38 +8,40 @@
 </head>
 <body>
    <div id="outer-class">
-        <h1 id="inner-class">To Do List</h1>
+        <h1 id="inner-class">Todo List using JavaScript</h1>
     </div>
           
-    
-      <div id="typing_place">  
+      <div id="typingPlaceDiv">  
         <form action="" method="get" enctype="multipart/form-data">
-            <input required id="todo" placeholder="enter the chorses" type="text"> <br>
-            
-
-
+            <input required id="todo" autocomplete="off"  type="text"> <br>
         </form>
-    
+       
+        <button id="add" >
+            Add
+        </button>
     </div>
     <br>
 
+    <!--
+         <div id="rectangle"> </div>
+        <br> 
+    -->
     <button id="button" >
         See
     </button>
     
     <script src="front.js"></script>
    
-    <button id="add" >
-        Add
-    </button>
-    
-    <script src="add.js"></script>
-
+  
+   
+    <ul id="taskList">
+        <!-- Burada eklenen görevler listelenecek -->
+    </ul>
    
     <input type="image" src="3481306.png" name="bin"  id="bin" />
     <script src="delete.js"></script>
 
-    
+    <script src="add.js"></script>
 
    <!-- <ul>
     </ul>
