@@ -1,6 +1,8 @@
 
 const addjs = document.querySelector('#add');
-const taskList = document.getElementById("taskList");
+const taskList = document.getElementById("tasks");
+
+let api = [];
 
 const add = async () => {
     const todoInput = document.getElementById("todo").value;
@@ -12,7 +14,14 @@ const add = async () => {
 
     const newUser = {
         todo: todoInput
+        
     };
+    api.push(todoInput);
+    console.log(api);
+    
+
+    
+
     
     try {
          const res = await fetch('https://64c3c68667cfdca3b660452c.mockapi.io/todo', {
@@ -40,5 +49,9 @@ const add = async () => {
      }
     
  };
+
+ 
+ 
+ 
  
  addjs.addEventListener('click', add);
