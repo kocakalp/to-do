@@ -1,5 +1,4 @@
 * {
-    
     font-size: large;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:400;
@@ -50,19 +49,15 @@ ul li {
   padding: 0.08em 10em;
   bottom: 3em;
   left: 0.0009%;
-
-
-
-
-  
-
 }
 
-
+.close:hover {
+  background-color: #1b1ca0;
+}
 
 .close {
   position: relative;
-  background-color: #1b1ca0;
+  background-color: #09ec82;
   border-radius: 8px;
   width: 0.700em;
   height:0.700em;
@@ -70,9 +65,23 @@ ul li {
   padding: 12px 16px 12px 16px;
   left:40%; 
   top: 0.050em;
-}
+  }
 
-  
+  .edit:hover {
+    background-color: #1b1ca0;
+  }
+
+  .edit {
+    position: relative;
+    background-color: #e0f804;
+    border-radius: 8px;
+    width: 0.700em;
+    height:0.700em;
+    
+    padding: 12px 16px 12px 16px;
+    left:40%; 
+    top: 0.050em;
+    }
 
   #square {
     box-sizing: border-box;
@@ -90,7 +99,6 @@ ul li {
     left: 50%;
   }
   
-  
   @media screen and (max-width: 900px) {
     #square {
       
@@ -102,7 +110,6 @@ ul li {
       padding-right: 20%;
     }
   }
-  
   
   @media screen and (min-width: 900px) {
     #square {
@@ -158,8 +165,6 @@ ul li {
     width: 10%;
   }
 }
-
- 
 
   @media screen and (max-width: 900px ) { /* boyutu 900 px den küçük olduğunda aktiv */
     #myInput {
