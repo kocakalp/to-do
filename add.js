@@ -49,10 +49,17 @@ async function newElement() {
      
       var editInput = document.createElement("input");
       editInput.type = "text";
+      editInput.id = "editText";
+      editInput.classList.add("edit-input");
+      editInput.autocomplete = "off";
       editInput.value = li.firstChild.nodeValue;
       
       
       li.replaceChild(editInput, li.firstChild);
+
+
+
+      
   
       
       editInput.addEventListener("keypress", async function(event) {
@@ -150,41 +157,9 @@ async function newElement() {
        console.log(error);
     }
   }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-  
-
 
 
 
   
-
- 
- 
- 
- 
-
-   
-    
-   
-
-  
-
-
-
-
-  
+       
+      
