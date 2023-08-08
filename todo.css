@@ -244,6 +244,13 @@ top: 0.050em;
   transform: translate(-47%, -50%);
 }
 
+.task-container {
+  white-space: pre;
+  /*display: flex;
+  justify-content: flex-end;  Align content to the right 
+  align-items: flex-end;*/
+}
+
 
 
 

@@ -16,8 +16,10 @@ async function displayTasks() {
 
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
-    li.textContent = task.todo;
-
+    const taskContainer = document.createElement("div");
+    taskContainer.className = "task-container";
+    taskContainer.textContent = task.todo;
+    li.appendChild(taskContainer);
     const span = document.createElement("span");
     span.innerHTML =
     '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16"> \
@@ -34,7 +36,7 @@ async function displayTasks() {
       </svg>';
     span_edit.className = "edit";
     li.appendChild(span_edit);
-
+    
     li.setAttribute('data-task-id', task.id); 
 
     span_edit.onclick = function () {
